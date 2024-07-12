@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{ /* Aplica as regras a seguir a todos os elementos */
+  padding: 0; /* Remove o preenchimento interno */
+  margin: 0; /* Remove a margem externa */
+  box-sizing: border-box; /* Faz com que largura e altura incluam o preenchimento e a borda */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{ /* Aplica as regras a seguir ao elemento <body> */
+  font-family: 'Roboto', sans-serif; /* Define a fonte padrão como 'Roboto', com fallback para qualquer fonte sans-serif */
+}
+
+.app{ /* Aplica as regras a seguir ao elemento com a classe 'app' */
+  display: flex; /* Define o tipo de exibição como flexível, permitindo o uso de flexbox */
+  width: 100%; /* Define a largura como 100% do elemento pai */
+  justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+  align-items: center; /* Centraliza os itens no eixo cruzado (vertical) */
+  flex-direction: column; /* Define a direção dos itens como coluna (vertical) */
 }
