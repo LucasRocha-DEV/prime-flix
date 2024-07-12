@@ -1,0 +1,29 @@
+/* src/pages/Erro/erro.css */
+.erro-container {
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    width: 100%; /* Faz o container ocupar toda a largura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 78px); /* Faz o container ocupar toda a altura da viewport */
+    color: #ffffff; /* Define a cor do texto para branco */
+}
+
+h1 {
+    font-size: 2em; /* Aumenta o tamanho do texto para dar mais destaque */
+}
+
+a {
+    color: #E50914; /* Cor vermelha característica da Netflix */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+    font-size: 20px;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #B20710; /* Cor mais escura no hover */
+    font-size: 22px;
+    
+}
