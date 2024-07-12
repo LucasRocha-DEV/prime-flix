@@ -20,8 +20,14 @@ header {
     color: #ffffff; /* Cor branca para os links */
     text-decoration: none; /* Remove o sublinhado do link */
     margin-left: 20px; /* Adiciona um espaço à esquerda dos links */
+    background-color: transparent; /* Define a cor de fundo inicial como transparente */
+    padding: 10px 17px; /* Adiciona um pouco de padding para melhor visualização do fundo */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
 }
 
 .favoritos:hover {
     text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre os links */
+    background-color: rgba(229, 9, 20, 0.426); /* Cor vermelha suave da Netflix ao passar o mouse */
+
 }

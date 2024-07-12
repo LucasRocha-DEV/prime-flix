@@ -4,6 +4,14 @@
     background-color: #363232;
 }
 
+.loading h1 {
+    color: #ffffff; /* Texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
 .lista-filmes article{
     width: 100%;
     padding: 15px;
