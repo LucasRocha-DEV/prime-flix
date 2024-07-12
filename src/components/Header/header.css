@@ -1,0 +1,27 @@
+header {
+    background-color: #1b1b1be7; /* Cor de fundo preta */
+    padding: 20px 50px; /* Espaçamento interno para dar espaço ao redor dos elementos */
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura da tela */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+}
+
+.logo {
+    font-size: 24px; /* Aumenta o tamanho da fonte do logotipo */
+    font-weight: bold; /* Deixa o texto do logotipo em negrito */
+    color: #E50914; /* Cor vermelha característica da Netflix */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.favoritos {
+    font-size: 16px; /* Define o tamanho da fonte para os links */
+    color: #ffffff; /* Cor branca para os links */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-left: 20px; /* Adiciona um espaço à esquerda dos links */
+}
+
+.favoritos:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre os links */
+}
