@@ -42,7 +42,7 @@ function Home() {
                     <article key={filme.id}>
                         <strong>{filme.title}</strong>
                         <img
-                            src={`https://image.tmdb.org/t/p/w500${filme.backdrop_path}`}
+                            src={`https://image.tmdb.org/t/p/w500${filme.poster_path}`}
                             alt={`Capa do filme ${filme.title}`}
                         />
                         <p>{filme.overview}</p>

@@ -1,0 +1,83 @@
+
+
+.filme-info {
+    color: #ffffff; /* Mantém a cor do texto para branco */
+    max-width: 800px; /* Limita a largura máxima para melhor leitura */
+    margin: 20px auto; /* Centraliza e adiciona margem para o topo e fundo */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    background-color: #343333; /* Um fundo mais escuro para contraste */
+    border-radius: 8px; /* Bordas arredondadas para suavidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+.filme-info h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 2.5em; /* Tamanho maior para o título */
+}
+
+.filme-info img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 6px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade à imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.filme-info h3 {
+    margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+    font-size: 1.8em; /* Tamanho do subtítulo */
+}
+
+.filme-info span {
+    display: block; /* Faz com que a sinopse ocupe sua própria linha */
+    margin-bottom: 20px; /* Espaço abaixo da sinopse */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    text-align: justify; /* Justifica o texto da sinopse para uma aparência uniforme */
+}
+
+.filme-info strong {
+    font-size: 1.2em; /* Tamanho da fonte para a avaliação */
+    padding: 5px 10px; /* Espaçamento interno para a tag de avaliação */
+    background-color: #E50914; /* Fundo vermelho característico da Netflix */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+.botoes {
+    background-color: #E50914; /* Fundo vermelho característico da Netflix */
+    color: #ffffff; /* Texto branco */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para o hover */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: inline-block; /* Permite definir padding e outras propriedades de caixa */
+    margin-left: 40px; /* Adiciona margem à esquerda para separar os botões */
+    margin-left: 350px;
+}
+
+.botoes:hover {
+    background-color: #B20710; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+@media (max-width: 768px) {
+    .filme-info {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .filme-info h1 {
+        font-size: 2em; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    .filme-info h3 {
+        font-size: 1.5em; /* Ajusta o tamanho do subtítulo para telas menores */
+    }
+}
+    .botoes {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
+        right: 10px; /* Ajusta a posição à direita para telas menores */
+        top: 10px; /* Ajusta a posição no topo para telas menores */
+    }
