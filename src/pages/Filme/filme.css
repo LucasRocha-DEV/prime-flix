@@ -1,6 +1,7 @@
 
 
 .filme-info {
+    position: relative;
     color: #ffffff; /* Mantém a cor do texto para branco */
     max-width: 800px; /* Limita a largura máxima para melhor leitura */
     margin: 20px auto; /* Centraliza e adiciona margem para o topo e fundo */
@@ -8,6 +9,7 @@
     background-color: #343333; /* Um fundo mais escuro para contraste */
     border-radius: 8px; /* Bordas arredondadas para suavidade */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    justify-content: flex-end;
 }
 
 .filme-info h1 {
@@ -35,34 +37,37 @@
 }
 
 .filme-info strong {
+    position: right;
+    top: 50px; /* Ajuste conforme necessário para alinhar com os botões */
+    right: 20px; /* Ajuste conforme necessário para posicionar à direita */
     font-size: 1.2em; /* Tamanho da fonte para a avaliação */
     padding: 5px 10px; /* Espaçamento interno para a tag de avaliação */
     background-color: #E50914; /* Fundo vermelho característico da Netflix */
     border-radius: 4px; /* Bordas arredondadas */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    margin-left: 70%;
 }
 
-.botoes {
-    background-color: #E50914; /* Fundo vermelho característico da Netflix */
-    color: #ffffff; /* Texto branco */
-    font-size: 16px; /* Tamanho da fonte */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Remove a borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove o sublinhado do link */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para o hover */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    display: inline-block; /* Permite definir padding e outras propriedades de caixa */
-    margin-left: 40px; /* Adiciona margem à esquerda para separar os botões */
-    margin-left: 350px;
+.botao-salvar, .botao-trailer {
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-left: 20px;
+    background-color: #E50914;
+    border-radius: 4px;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.botoes:hover {
-    background-color: #B20710; /* Cor mais escura no hover */
-    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+.botao-salvar:hover, .botao-trailer:hover {
+    background-color: #B20710;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
+
     .filme-info {
         padding: 10px; /* Reduz o padding em telas menores */
     }
@@ -75,9 +80,42 @@
         font-size: 1.5em; /* Ajusta o tamanho do subtítulo para telas menores */
     }
 }
-    .botoes {
+    .botao-salvar {
         font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
         padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
         right: 10px; /* Ajusta a posição à direita para telas menores */
         top: 10px; /* Ajusta a posição no topo para telas menores */
+    }
+
+    .botao-trailer {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
+        margin-right: 10px; /* Ajusta a margem à direita para telas menores */
+    }
+
+@media (max-width: 768px) {
+
+    .filme-info {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .filme-info h1 {
+        font-size: 2em; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    .filme-info h3 {
+        font-size: 1.5em; /* Ajusta o tamanho do subtítulo para telas menores */
+    }
+}
+    .botao-salvar {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
+        right: 10px; /* Ajusta a posição à direita para telas menores */
+        top: 10px; /* Ajusta a posição no topo para telas menores */
+    }
+
+    .botao-trailer {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
+        margin-right: 10px; /* Ajusta a margem à direita para telas menores */
     }

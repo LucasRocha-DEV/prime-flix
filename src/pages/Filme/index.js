@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./filme.css";
 import api from "../../api";
+import { Link } from 'react-router-dom';
 
 function Filme() {
     const { id } = useParams();
@@ -47,16 +48,12 @@ function Filme() {
             <h3>Sinopse</h3>
             <span>{filme.overview}</span>
 
+            <Link className="botao-salvar" to="/salvar">Salvar</Link>
+            
+            <Link className="botao-trailer" to="/trailer">Trailer</Link>
+
             <strong>Avaliação: {filme.vote_average.toFixed(1)} / 10</strong>
 
-            <div className="botoes">
-                <button>Salvar</button>
-                <button>
-                    <a href="#">
-                        Trailer
-                    </a>
-                </button>
-            </div>
         </div>
     );
 }
