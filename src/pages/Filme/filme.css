@@ -52,24 +52,27 @@
     margin-bottom: 20px; /* Espaço abaixo da avaliação */
 }
 
-.area-buttons button, .botao-salvar, .botao-trailer {
+.area-buttons button, .area-buttons a {
+    
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 5px; /* Margem entre os botões */
+    background-color: #E50914; /* Cor de fundo vermelha característica da Netflix */
+    color: #fff; /* Cor do texto branco */
+    border-radius: 4px; /* Bordas arredondadas */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor do tipo ponteiro */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Transição suave para hover */
     font-weight: bold; /* Deixa o texto em negrito */
-    margin-left: 20px;
-    background-color: #E50914;
-    border-radius: 4px;
-    transition: background-color 0.1s ease, transform 0.1s ease;
-    display: inline-block;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.botao-salvar:hover, .botao-trailer:hover {
-    background-color: #B20710;
-    color: #ffffff;
+.area-buttons button:hover, .area-buttons a:hover {
+    background-color: #800a0a; /* Cor de fundo vermelha mais intensa no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho no hover */
+    color: #fff; /* Cor do texto branco */
 }
-
 
 @media (max-width: 768px) {
 
@@ -85,42 +88,3 @@
         font-size: 1.5em; /* Ajusta o tamanho do subtítulo para telas menores */
     }
 }
-    .botao-salvar {
-        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
-        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
-        right: 10px; /* Ajusta a posição à direita para telas menores */
-        top: 10px; /* Ajusta a posição no topo para telas menores */
-    }
-
-    .botao-trailer {
-        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
-        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
-        margin-right: 10px; /* Ajusta a margem à direita para telas menores */
-    }
-
-@media (max-width: 768px) {
-
-    .filme-info {
-        padding: 10px; /* Reduz o padding em telas menores */
-    }
-
-    .filme-info h1 {
-        font-size: 2em; /* Ajusta o tamanho do título para telas menores */
-    }
-
-    .filme-info h3 {
-        font-size: 1.5em; /* Ajusta o tamanho do subtítulo para telas menores */
-    }
-}
-    .botao-salvar {
-        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
-        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
-        right: 10px; /* Ajusta a posição à direita para telas menores */
-        top: 10px; /* Ajusta a posição no topo para telas menores */
-    }
-
-    .botao-trailer {
-        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
-        padding: 8px 16px; /* Ajusta o espaçamento interno para telas menores */
-        margin-right: 10px; /* Ajusta a margem à direita para telas menores */
-    }
