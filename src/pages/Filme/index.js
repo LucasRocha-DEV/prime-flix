@@ -48,9 +48,10 @@ function Filme() {
             <h3>Sinopse</h3>
             <span>{filme.overview}</span>
 
-            <Link className="botao-salvar" to="/salvar">Salvar</Link>
-            
-            <Link className="botao-trailer" to="/trailer">Trailer</Link>
+            <div className="area-buttons">
+                <button className="botao-salvar">Salvar</button>
+                <button className="botao-trailer">Trailer</button>
+            </div>
 
             <strong>Avaliação: {filme.vote_average.toFixed(1)} / 10</strong>
 

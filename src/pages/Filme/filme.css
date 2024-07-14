@@ -1,10 +1,9 @@
 
 
 .filme-info {
-    position: relative;
     color: #ffffff; /* Mantém a cor do texto para branco */
     max-width: 800px; /* Limita a largura máxima para melhor leitura */
-    margin: 20px auto; /* Centraliza e adiciona margem para o topo e fundo */
+    margin: 10px auto; /* Centraliza e adiciona margem para o topo e fundo */
     padding: 20px; /* Adiciona um pouco de espaço interno */
     background-color: #343333; /* Um fundo mais escuro para contraste */
     border-radius: 8px; /* Bordas arredondadas para suavidade */
@@ -18,9 +17,12 @@
 }
 
 .filme-info img {
+    display: block; /* Faz a imagem ser tratada como um bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
     border-radius: 6px; /* Bordas arredondadas para a imagem */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade à imagem */
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade à imagem */
     margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 
@@ -34,6 +36,7 @@
     margin-bottom: 20px; /* Espaço abaixo da sinopse */
     line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
     text-align: justify; /* Justifica o texto da sinopse para uma aparência uniforme */
+    font-size: 1.2em; /* Tamanho da fonte para a sinopse */
 }
 
 .filme-info strong {
@@ -45,10 +48,11 @@
     background-color: #E50914; /* Fundo vermelho característico da Netflix */
     border-radius: 4px; /* Bordas arredondadas */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
-    margin-left: 70%;
+    margin-left: 75%;
+    margin-bottom: 20px; /* Espaço abaixo da avaliação */
 }
 
-.botao-salvar, .botao-trailer {
+.area-buttons button, .botao-salvar, .botao-trailer {
     font-weight: bold; /* Deixa o texto em negrito */
     margin-left: 20px;
     background-color: #E50914;
@@ -65,6 +69,7 @@
     background-color: #B20710;
     color: #ffffff;
 }
+
 
 @media (max-width: 768px) {
 
